@@ -4,7 +4,7 @@ import { Chart, registerables } from 'chart.js';
 
 // Register Chart.js components
 Chart.register(...registerables);
-
+const dataUrl = `${process.env.PUBLIC_URL}/ZonAnn.TS+dSST.csv`};
 function App() {
   const [csvData, setCsvData] = useState("");
  
