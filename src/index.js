@@ -53,7 +53,7 @@ function App() {
   useEffect(() => {
     async function getData() {
       try {
-        const response = await fetch("./public/ZonAnn.Ts+dSST.csv");
+        const response = await fetch("ZonAnn.Ts+dSST.csv");
         if (!response.ok) {
           throw new Error(`Failed to fetch: ${response.status}`);
         }
