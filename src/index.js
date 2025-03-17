@@ -4,7 +4,6 @@ import { Chart, registerables } from 'chart.js';
 
 // Register Chart.js components
 Chart.register(...registerables);
-const dataUrl = `${process.env.PUBLIC_URL}/ZonAnn.TS+dSST.csv`};
 function App() {
   const [csvData, setCsvData] = useState("");
  
@@ -53,7 +52,7 @@ function App() {
   useEffect(() => {
     async function getData() {
       try {
-        const response = await fetch("ZonAnn.Ts+dSST.csv");
+        const response = await fetch("https://mihaielagiurca.github.io/Global-mean-temperature/public/ZonAnn.Ts+dSST.csv");
         if (!response.ok) {
           throw new Error(`Failed to fetch: ${response.status}`);
         }
