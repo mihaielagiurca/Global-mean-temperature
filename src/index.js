@@ -53,7 +53,7 @@ function App() {
   useEffect(() => {
     async function getData() {
       try {
-        const response = await fetch("/Global-mean-temperature/ZonAnn.TS+dSST.csv");
+        const response = await fetch(dataUrl);
         if (!response.ok) {
           throw new Error(`Failed to fetch: ${response.status}`);
         }
